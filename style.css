@@ -1,0 +1,88 @@
+/* <canvas id="myChart" width="400" height="150"></canvas>
+<div class="status">
+    <input type="button" id="deaths" class="btn" value="Number of Deaths">
+    <input type="button" id="confirmed" class="btn" value="Confirmed Cases">
+    <input type="button" id="recovered" class="btn" value="Number of recovered">
+    <input type="button" id="critical" class="btn" value="Number of critical condition">
+    
+</div>
+<div id="continents">
+    <input type="button" id="world" class="regions" value="World">
+    <input type="button" id="asia" class="regions" value="Asia">
+    <input type="button" id="europe" class="regions" value="Europe">
+    <input type="button" id="africa" class="regions" value="Africa">
+    <input type="button" id="americas" class="regions" value="Americas">
+</div>
+<div class="countries"></div>
+<div class="countries-div"></div> */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100vh;
+}
+
+body {
+    background :url('/corona.jpg') no-repeat center center/cover;
+    
+}
+
+.status {
+    width: 100vw;
+    padding:50px ; 
+    text-align: center;  
+}
+.btn {
+    background: orange;
+}
+
+#continents{
+    width: 100vw;
+    padding:0 50px ;
+    text-align: center; 
+}
+input {
+    padding: 5px;
+    margin: 2%;
+}
+input:hover{
+
+    scale: 5;
+    color: teal;
+    background: rgb(31, 20, 18);
+}
+
+.countries {
+    text-align: center;
+}
+
+.countries-div {
+    text-align: center;
+    width: 100vw;
+
+}
+
+h1 {
+    color: teal;
+}
+span{
+    color: #1F618D;
+    font: 1.3em sans-serif;
+}
+select {
+    width: 30%;
+    height: 5%;
+    color: royalblue;
+}
+#giveData {
+    background:grey;
+    color: cornsilk;
+}
+#giveData:hover {
+    color: teal;
+    background: rgb(31, 20, 18);
+    scale: 2;
+}
